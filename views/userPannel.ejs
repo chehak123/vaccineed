@@ -1,0 +1,97 @@
+<%- include('partials/header') %>
+
+  <body class="bg-light">
+    <nav class="navbar fixed-top navbar-dark bg-dark">
+  <a class="navbar-brand mr-auto mr-lg-0" href="#">VACCINEED USER DASHBOARD</a>
+  <div style="text-align: right;"><a class="btn btn-light" href="/logout" role="button">Log Out</a></div>
+</nav>
+
+<div class="nav-scroller bg-white shadow-sm">
+  <nav class="nav nav-underline">
+    <a class="nav-link" href="/user/<%=userInfo._id%>" target="_blank" disable>Your Info</a>
+    <a class="nav-link" href="">Edit Info</a>
+
+  </nav>
+</div>
+
+<main role="main" class="container">
+  <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-purple rounded shadow-sm">
+    <div class="lh-100">
+      <h4 class="mb-0 text-white lh-100">Welcome <%=userInfo.name%></h4>
+    </div>
+  </div>
+
+  <div class="my-3 p-3 bg-white rounded shadow-sm">
+    <h5>This is an USER dashboard </h5>
+    <ul>
+        <li>
+            Your Token No. : <b><%=userInfo._id%></b> 
+        </li>
+        <li>
+            Your position in queue : <b>2</b>
+        </li>
+        <li>
+            Request status : <b><%=userInfo.status%></b>
+        </li>
+    </ul>
+    <p>
+        You can edit your information by clicking on above <b>Edit Info</b> navigation button
+    </p>
+
+    <br>
+    <h5>USER DETAILS</h5>
+
+    <table class="table table-bordered">
+      <!-- <thead>
+        <tr>
+          <th></th>
+          <th>Full Name</th>
+          <th>Adhaar card Number</th>
+          <th>Status</th>
+        </tr>
+      </thead> -->
+      <tbody>
+
+        <tr>
+          <td>Full Name</td>
+          <td><%=userInfo.name%></td>
+        </tr>
+
+        <tr>
+          <td>Contact Number</td>
+          <td><%=userInfo.contact%></td>
+        </tr>
+
+        <tr>
+          <td>Age</td>
+          <td><%=userInfo.age%></td>
+        </tr>
+
+        <tr>
+          <td>Blood Group</td>
+          <td><%=userInfo.blood%></td>
+        </tr>
+
+        <tr>
+          <td>Email Id</td>
+          <td><%=userInfo.username%></td>
+        </tr>
+
+        <tr>
+          <td>Residential Address</td>
+          <td><%=userInfo.address%></td>
+        </tr>
+
+        <tr>
+          <td>Adhaar card number</td>
+          <td><%=userInfo.aadhar%></td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+  
+</main>
+
+<%- include('partials/footer') %>

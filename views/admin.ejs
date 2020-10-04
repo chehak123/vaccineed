@@ -1,0 +1,40 @@
+<%- include('partials/header') %>
+
+  <body class="bg-light">
+    <nav class="navbar fixed-top navbar-dark bg-dark">
+  <a class="navbar-brand mr-auto mr-lg-0" href="#">VACCINEED ADMIN DASHBOARD</a>
+  <div style="text-align: right;"><a class="btn btn-light " href="/logout" role="button">Log Out</a></div>
+</nav>
+
+<div class="nav-scroller bg-white shadow-sm">
+  <nav class="nav nav-underline">
+    <a class="nav-link" href="/admin">Dashboard</a>
+    <a class="nav-link" href="/users_list">Users List</a>
+    <a class="nav-link" href="/stock">Available Stock</a>
+    <a class="nav-link" href="/admin_list">Emergency Users List</a>
+
+  </nav>
+</div>
+
+<main role="main" class="container">
+  <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-purple rounded shadow-sm">
+    <div class="lh-100">
+      <h4 class="mb-0 text-white lh-100">Welcome ADMIN</h4>
+    </div>
+  </div>
+
+  <div class="my-3 p-3 bg-white rounded shadow-sm">
+    <h5>This is an Admin dashboard </h5>
+    <p>Admin can see all the users who have registered for the vaccine by clicking on <b>Users List</b> navigation tab.
+      Admin also can see the stock of Vaccine , required stock , upcoming stock which is updated by seller's data
+      base by clicking on <b>Stocks</b> navigation tab and also can see who else have admin rights and can see the list of
+      those users who urgently needs the vaccine by clicking on <b>Emergency Users List</b> navigation tab </p> 
+    <ol>
+
+    </ol>
+  </div>
+
+  
+</main>
+
+<%- include('partials/footer') %>

@@ -1,0 +1,276 @@
+<%- include('partials/header') %>
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <!-- <h1 class="logo"><a href="index.html">Vaccineed</a></h1> -->
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <a href="/" class="logo"><img src="https://i.ibb.co/yhHKJyh/Screenshot-239.png" alt="" class="img-fluid"></a>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li><a href="#hero" class="btn-get-quote"><b>Home</b></a></li>
+          <li><a href="#about" class="btn-get-quote"><b>About</b></a></li>
+          <li><a href="#slot" class="btn-get-quote"><b>Steps</b></a></li>
+          <li><a href="#counts" class="btn-get-quote"><b>Stats</b></a></li>
+          <li><a href="#faq" class="btn-get-quote"><b>FAQ</b></a></li>
+          <li><a href="#team" class="btn-get-quote"><b>Team</b></a></li>
+          <li><a href="/login" class="btn-get-quote"><b>Login</b></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 pt-2 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h1><b>Virtual Queue for COVID-19 vaccination</b></h1>
+          <ul>
+            <li><i class="fa fa-check"></i> <h3>Go digital to maintain social distancing and prevent virus spread</h3></li>
+            <li><i class="fa fa-check"></i> <h3>Get latest updates on Corona virus</h3></li>
+            <li><i class="fa fa-check"></i> <h3>Ask any query related to vaccination</h3></li>
+          </ul>
+          <div class="mt-3">
+            <a href="/register" class="btn-get-quote">Register for your Vaccine here</a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img">
+          <img src="https://image.freepik.com/free-vector/people-line-waiting-pay_23-2148206445.jpg" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- about -->
+    <section id="about" class="about" >
+      <br><br>
+      <div class="container">
+        <div class="section-title">
+          <h2>ABOUT</h2>
+          <div class="d-flex flex-row bd-highlight mb-3" >
+          <div class="col-lg-6 hero-img">
+            <img style="height: auto; width: 300px; border-radius: 50px;" src="https://previews.123rf.com/images/vectorv/vectorv2005/vectorv200503013/146476322-paper-cut-syringe-icon-isolated-on-grey-background-syringe-for-vaccine-vaccination-injection-flu-sho.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="about_us col-lg-6">
+          <p style="padding-top: 17%;">
+            
+            As and when COVID-19 vaccines become available, they will likely lead
+            to a massive global effort to distribute and administer them. In this
+            context our team brought a platform of virtual queue.
+            Here user can book his/her slot to get vaccine preventing virus spread and
+            maintaining social distancing. This will also help in keeping a check
+            on black marketing of vaccines.
+          </p>
+          </div>
+          </div>
+        </div>
+    </section>
+    <!-- End About section -->
+
+    <!--Slot booking-->
+    <section id="slot" class="slot">
+      <br><br>
+
+      <div class="container">
+
+        <div class="row content justify-content-center">
+          <div class="col-lg-10">
+            <h2>Get your Token number just by following some simple steps...</h2>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section id="why-us" class="why-us">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-4">
+            <div class="box">
+              <span>01</span>
+              <h4>Register</h4>
+              <p>Register by giving some basic details like name, address, aadhar card no. and upload your signature.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box">
+              <span>02</span>
+              <h4>Dashboard</h4>
+              <p>See the queue status when are u getting vaccine. Receive updates on COVID-19 panedemic. </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box">
+              <span>03</span>
+              <h4> Emergency Request</h4>
+              <p>Apply for Emergency Request giving some genuine reason alongwith medical certificate. </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End slot booking Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts section-bg">
+      <br>
+      <div class="container">
+        <div class="section-title">
+          <h2>COVID-19 STATISTICS OF INDIA</h2>
+        </div>
+        <br>
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <i class="fa fa-plus-square"></i>
+              <span data-toggle="counter-up"><%=deaths%></span>
+              <p>total deaths</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+            <div class="count-box">
+              <i class="fa fa-heartbeat"></i>
+              <span data-toggle="counter-up"><%=treated%></span>
+              <p>total treated</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="fa fa-ambulance"></i>
+              <span data-toggle="counter-up"><%=infected%></span>
+              <p>total infected</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="fa fa-medkit"></i>
+              <span data-toggle="counter-up"><%=newcases%></span>
+              <p>cases in last 24 hrs</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <br><br>
+
+    </section><!-- End Counts Section -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq" style="background-color: rgb(243, 253, 244);">
+      <br>
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+          <h3>Have any query regarding covid-19 vaccination??.....Ask our chatbot!</h3>
+        </div>
+
+    <div class="chat" >
+      
+      <iframe
+      style="border-color: rgb(29, 87, 29);"
+    allow="microphone;"
+    width="350"
+    height="430"
+    src="https://console.dialogflow.com/api-client/demo/embedded/6c63829f-d9b4-4dd4-bbd6-8b7685e5a3cf">
+      </iframe>
+     
+    </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+  </main><!-- End #main -->
+<!-- Add news section -->
+  
+
+<!-- ======= Team Section ======= -->
+<section id="team" class="team section-bg">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Team</h2>
+      
+    </div>
+
+    <div class="row">
+
+      <div class="col-lg-4 col-md-6 d-flex align-items-stretch justify-content-center">
+        <div class="member">
+          <div class="member-img">
+            <img src="https://media-exp1.licdn.com/dms/image/C5103AQHBsWBxUJ8jKA/profile-displayphoto-shrink_400_400/0?e=1606953600&v=beta&t=QWHC_ptg1jsmh158IGltiCkxIybzBg3RRV-xnwgYjJg" style="width: 250px; height: auto;" class="img-fluid" alt="">
+          </div>
+          <div class="member-info">
+            <h4>Chehak Agrawal</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 d-flex align-items-stretch justify-content-center">
+        <div class="member">
+          <div class="member-img">
+            <img src="https://media-exp1.licdn.com/dms/image/C5103AQEJQtEI8hdEQA/profile-displayphoto-shrink_400_400/0?e=1606953600&v=beta&t=sw-ZhqR75JJvCI9mNf17yrqjgb8BA3TMmMRfla8F9cc" style="width: 250px; height: auto;" class="img-fluid" alt="">
+          </div>
+          <div class="member-info">
+            <h4>Abhishek Sharma</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 d-flex align-items-stretch justify-content-center">
+        <div class="member">
+          <div class="member-img">
+            <img src="https://media-exp1.licdn.com/dms/image/C4E03AQFGw4XGy8iHzA/profile-displayphoto-shrink_400_400/0?e=1606953600&v=beta&t=_KxbTgYT5d3-oQNYXP1WBnlkJAJTQY72NkeJHjBgVe0" style="width: 250px; height: auto;" class="img-fluid" alt="">
+          </div>
+          <div class="member-info">
+            <h4>Ashi Sharma</h4>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section><!-- End Team Section -->
+
+
+
+
+
+
+
+
+<!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="container d-md-flex py-4">
+
+      <div class="mr-md-auto text-center text-md-left">
+        <div class="copyright">
+          &copy; <strong><span>The Still Variables</span></strong>
+        </div>
+
+      </div>
+
+    </div>
+  </footer><!-- End Footer -->
+
+  <%- include('partials/footer') %>

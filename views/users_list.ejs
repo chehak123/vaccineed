@@ -1,0 +1,59 @@
+<%- include('partials/header') %>
+
+  <body class="bg-light">
+    <nav class="navbar  fixed-top navbar-dark bg-dark">
+  <a class="navbar-brand mr-auto mr-lg-0" href="#">VACCINEED ADMIN DASHBOARD</a>
+  <div style="text-align: right;"><a class="btn btn-light" href="/logout" role="button">Log Out</a></div>
+</nav>
+
+<div class="nav-scroller bg-white shadow-sm">
+  <nav class="nav nav-underline">
+    <a class="nav-link" href="/admin">Dashboard</a>
+    <a class="nav-link" href="/users_list">Users List</a>
+    <a class="nav-link" href="/stock">Available Stock</a>
+    <a class="nav-link" href="/admin_list">Emergency Users List</a>
+
+  </nav>
+</div>
+
+<main role="main" class="container">
+  <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-purple rounded shadow-sm">
+    <div class="lh-100">
+      <h4 class="mb-0 text-white lh-100">User List</h4>
+    </div>
+  </div>
+
+  <div class="my-3 p-3 bg-white rounded shadow-sm">
+    
+    <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>Token No.</th>
+            <th>Full Name</th>
+            <th>Adhaar card Number</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% users.forEach(function(user){ %>
+            <tr>
+              <td><a href="/userInfo/<%=user._id%>" target="blank"><%=user._id%></a></td>
+              <td><%=user.name%></td>
+              <td><%=user.aadhar%></td>
+              <td><%=user.status%></td>
+              <td><a class="btn btn-success" href="/done/<%=user._id%>" role="button">Done</a></td>
+              <td><a class="btn btn-warning" href="/pending/<%=user._id%>" role="button">Pending</a></td>
+              <td><a class="btn btn-danger" href="/cancel/<%=user._id%>" role="button">Cancel</a></td>
+              </td>
+            </tr>
+         <% }) %>
+
+        </tbody>
+      </table>
+
+  </div>
+
+  
+</main>
+
+<%- include('partials/footer') %>

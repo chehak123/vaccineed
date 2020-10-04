@@ -1,0 +1,76 @@
+<%- include('partials/header') %>
+
+<div class="container mt-8">
+    <div class="user_header">
+    <h4 style="text-align: left;" id="token_no" ><b>Token No. - <%=userInfo._id%></b></h4>
+    </div>
+<br><br>
+    <div class="row justify-content-center">
+      <div class="col-10">
+  
+              <div class="userdetail">
+                <h5><b>Full name</b> : <%=userInfo.name%></h5>
+                <hr>
+              </div>
+
+              <div class="userdetail">
+                <h5><b>Contact Number</b> : <%=userInfo.contact%></h5>
+                <hr>
+              </div>
+
+              <div class="userdetail">
+                <h5><b>Age</b> : <%=userInfo.age%></h5>
+                <hr>
+              </div>
+
+              <div class="userdetail">
+                <h5><b>Blood Group</b> : <%=userInfo.blood%></h5>
+                <hr>
+              </div>
+
+              <div class="userdetail">
+                <h5><b>Email ID </b>: <%=userInfo.username%></h5>
+                <hr>
+              </div>
+
+              <div class="userdetail">
+                <h5><b>Password </b>: ********</h5>
+                <hr>
+              </div>
+              
+              <div class="userdetail">
+                <h5><b>Residential Address </b>: <%=userInfo.address%></h5>
+                <hr>
+              </div>
+
+              <div class="userdetail">
+                <h5><b>Adhaar card number</b> : <%=userInfo.aadhar%></h5>
+                <hr>
+              </div>         
+              
+              <% if(userInfo.emergency == "yes") %>
+                  <% { %> <div class="userdetail">
+                    <h5><b>Emergency Reason</b> : <%=userInfo.reason%></h5>
+                    <hr>
+                  </div> <% } %>
+
+
+              <!-- <button id="emergency_request" class="btn btn-success btn-lg">Send Emergency Request</button> -->
+
+
+              <script type="text/javascript">
+                function ShowHideDiv(btn) {
+                    var reason = document.getElementById("reason");
+                    reason.style.display ="block";
+                    var file= document.getElementById("doc");
+                    file.style.display="block"
+                }
+            </script>
+          </div>
+        </div>
+      </div>
+  <br>
+  <br>
+  <br>
+
+<%- include('partials/footer') %>
