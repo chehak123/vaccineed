@@ -392,7 +392,6 @@ app.post("/login", function(req, res){
       });
     }
   });
-
 });
 
 let port = process.env.PORT;
