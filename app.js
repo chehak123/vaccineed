@@ -10,7 +10,7 @@ const GoogleStrategy = require('passport-google-oauth20').Strategy;
 const findOrCreate = require('mongoose-findorcreate');
 var Request = require("request");
 const https = require('https');
-const alert = require('alert');
+// const alert = require('alert');
 const { userInfo } = require('os');
 
 const app = express();
@@ -95,20 +95,20 @@ passport.use(new GoogleStrategy({
 let tempUser = {} ;
 
 app.get("/", function(req, res){
-  https.get("https://api.thevirustracker.com/free-api?countryTotal=IN" , function(response)
-  {
-  response.on("data" , function(data)
-  {
-      var apidata = JSON.parse(data);
-      const deaths = apidata.countrydata[0].total_deaths;
-      const treated = apidata.countrydata[0].total_recovered;
-      const infected = apidata.countrydata[0].total_cases;
-      const newcases = apidata.countrydata[0].total_new_cases_today;
+  // https.get("https://api.thevirustracker.com/free-api?countryTotal=IN" , function(response)
+  // {
+  // response.on("data" , function(data)
+  // {
+  //     var apidata = JSON.parse(data);
+  //     const deaths = apidata.countrydata[0].total_deaths;
+  //     const treated = apidata.countrydata[0].total_recovered;
+  //     const infected = apidata.countrydata[0].total_cases;
+  //     const newcases = apidata.countrydata[0].total_new_cases_today;
 
 
-      res.render("firstPage" , { deaths:deaths , treated:treated , infected:infected , newcases:newcases})
-  })
-  });
+      res.render("firstPage")
+  // })
+  // });
 });
 
 app.get("/userPannel", function(req, res){
