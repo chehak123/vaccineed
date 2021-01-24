@@ -1,8 +1,5 @@
 # VACCINEED...VIRTUAL QUEUE FOR COVID-19 VACCINATION
 
-**WEBSITE LINK**
-https://pacific-taiga-57256.herokuapp.com/
-
 **WHY THIS?**
 
 Covid vaccine distribution seems to be very difficult in the lockdown. Therefore, to prevent
