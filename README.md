@@ -7,6 +7,8 @@ virus spread and maintain social distancing during this process, we came up with
 idea of virtual queueing for covid -19 vaccine distribution system. This will also help in
 keeping a check on black marketing of vaccines.
 
+## WEBSITE LINK
+https://vaccineed.herokuapp.com/
 
 **DESCRIPTION:**
 
@@ -45,8 +47,6 @@ FRONTEND
 ● CSS
 
 ● JS
-
-● React
 
 BACKEND
 
